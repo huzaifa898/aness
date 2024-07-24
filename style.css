@@ -281,6 +281,60 @@ nav ul li a:hover {
 .btn:hover {
     background: rgba(255, 255, 255, 0.2);
 }
+.fullpage-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    background: url('./images/Bild\ \(1\).png') no-repeat center center/cover;
+  }
+  
+  .fullpage-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .fullpage-title {
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  .fullpage-text {
+    font-size: 1.2em;
+    margin-top: 400px;
+    margin-left: 100px;
+    text-align: center;
+    display: flex;
+    justify-items: end;
+  }
+  
+  .fullpage-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    border: 2px solid transparent;
+    transition: 0.3s;
+  }
+  
+  .fullpage-button:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+  }
+
+
+
 
 /* Media Queries */
 @media (max-width: 768px) {
