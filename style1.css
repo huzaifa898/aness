@@ -22,7 +22,6 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-    
 }
 
 nav ul li a {
@@ -49,12 +48,14 @@ nav ul li a:hover {
 .auth-buttons a:hover {
     background: rgba(255, 255, 255, 0.4);
 }
+
 .container {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 50px;
     box-sizing: border-box;
+    margin-top: 50px;
 }
 
 .left-side {
@@ -79,7 +80,7 @@ nav ul li a:hover {
 .right-side {
     flex: 1;
     padding-left: 20px;
-    text-align: right; /* Align text to the right side */
+    text-align: center; /* Align text to the right side */
 }
 
 .right-side h1 {
@@ -101,8 +102,13 @@ nav ul li a:hover {
 }
 
 .btn-primary {
-    background-color: #007bff;
-    color: #fff;
+    padding: 10px 20px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-top: 20px;
 }
 
 .btn-secondary {
@@ -113,6 +119,7 @@ nav ul li a:hover {
 .btn:hover {
     background: rgba(255, 255, 255, 0.2);
 }
+
 .privacy-section {
     display: flex;
     justify-content: center;
@@ -127,6 +134,7 @@ nav ul li a:hover {
     align-items: center;
     max-width: 1200px;
     width: 100%;
+    gap: 600px;
 }
 
 .privacy-text {
@@ -180,4 +188,414 @@ nav ul li a:hover {
 
 .exif-logo {
     width: 200px;
+}
+
+.hero-title {
+    text-align: center;
+}
+
+.hero-image1 {
+    margin-left: 20px;
+}
+
+.info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    margin-bottom: -200px;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    gap: 600px; /* Adjust this value to increase/decrease the space between image and text */
+    margin-top: 200px;
+}
+
+.info-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.info-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.info-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.info-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.info-text p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #6200ea;
+}
+
+.info-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #00e676;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.info-button:hover {
+    background-color: #00e676;
+    color: #111;
+}
+
+.exif-event-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-bottom: -300px;
+    color: #fff; /* White text color */
+    padding: 2rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.email-button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.email-button:hover {
+    background-color: #0056b3; /* Button hover color */
+}
+
+.exif-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.exif-container {
+    display: flex;
+    width: 100%;
+}
+
+.exif-left {
+    flex: 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exif-right {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.exif-image-left img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.exif-image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exif-image-square img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.exif-image-circle {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.exif-image-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.custom-footer {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 10px 0;
+}
+
+.footer-legal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-legal li {
+    margin: 0 10px;
+}
+
+.footer-legal li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-legal li .separator {
+    color: #666;
+}
+.hero-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.hero-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image1 {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Media Queries for Responsive Design */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 575.98px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .left-side, .right-side {
+        padding: 0;
+        text-align: center;
+    }
+
+    .right-side {
+        padding-top: 20px;
+    }
+
+    .privacy-container, .info-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .privacy-text, .info-text {
+        text-align: center;
+        margin: 0;
+    }
+
+    .auth-buttons a {
+        margin-right: 10px;
+        padding: 5px 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .privacy-info-button {
+        margin-top: 10px;
+    }
+
+    .info-button {
+        margin-top: 10px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+    .hero-title {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    .hero-image-container {
+        padding: 10px;
+    }
+
+    .hero-image1 {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 767.98px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .left-side, .right-side {
+        padding: 0;
+        text-align: center;
+    }
+
+    .right-side {
+        padding-top: 20px;
+    }
+
+    .privacy-container, .info-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .privacy-text, .info-text {
+        text-align: center;
+        margin: 0;
+    }
+
+    .auth-buttons a {
+        margin-right: 10px;
+        padding: 5px 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .privacy-info-button {
+        margin-top: 10px;
+    }
+
+    .info-button {
+        margin-top: 10px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 991.98px) {
+    .privacy-container, .info-container {
+        gap: 200px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1199.98px) {
+    .privacy-container, .info-container {
+        gap: 300px;
+    }
 }
